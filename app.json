@@ -2,13 +2,22 @@
   "expo": {
     "name": "RSGC Tracker",
     "slug": "rsgc-tracker",
-    "runtimeVersion": { "policy": "sdkVersion" },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
     "android": {
       "package": "com.rsgc.tracker",
       "permissions": [
         "ACCESS_BACKGROUND_LOCATION",
-        "ACCESS_FINE_LOCATION"
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "ACCESS_COARSE_LOCATION"
       ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d38571f6-dd7b-43ac-87bb-2f275c500fc7"
+      }
     }
   }
 }
